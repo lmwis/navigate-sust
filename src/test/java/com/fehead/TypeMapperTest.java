@@ -1,7 +1,7 @@
 package com.fehead;
 
-import com.fehead.dao.TypeMapper;
-import com.fehead.dao.entity.Type;
+import com.fehead.navigate.dao.TypeMapper;
+import com.fehead.navigate.dao.entity.Type;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.junit.Test;
 import org.junit.runner.RunWith;

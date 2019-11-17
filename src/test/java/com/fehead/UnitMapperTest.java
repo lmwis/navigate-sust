@@ -1,7 +1,7 @@
 package com.fehead;
 
-import com.fehead.config.vo.UnitVO;
-import com.fehead.dao.UnitMapper;
+import com.fehead.navigate.config.vo.UnitVO;
+import com.fehead.navigate.dao.UnitMapper;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.junit.Test;
 import org.junit.runner.RunWith;
