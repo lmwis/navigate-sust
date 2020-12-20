@@ -48,7 +48,12 @@
 
     <dependencies>
 
-        <!--mysql连接池-->
+        <dependency>
+            <groupId>com.fehead.open</groupId>
+            <artifactId>api-call-counter</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+<!--        mysql连接池-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
@@ -104,6 +109,8 @@
             <artifactId>spring-security-web</artifactId>
         </dependency>
 
+
+
     </dependencies>
 
     <build>
@@ -150,13 +157,13 @@
                 </configuration>
             </plugin>
 
-            <plugin>
+            <!--<plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <fork>true</fork>
                 </configuration>
-            </plugin>
+            </plugin>-->
         </plugins>
 
     </build>
