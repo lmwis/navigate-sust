@@ -15,13 +15,11 @@ import java.util.List;
  * @Version 1.0
  */
 public interface UnitMapper extends BaseMapper<Unit> {
-
-
-
     @Select(value = "select * from unit_info left join sust_point on unit_info.point_id=sust_point.id where unit_info.id=#{id}")
     public UnitVO selectUnitInfoById(int id);
+
     @Select(value = "select * from unit_info left join sust_point " +
             "on unit_info.point_id=sust_point.id where unit_info.name " +
-            "like '%${name}%' and unit_info.status=1")
+            "like #{name} and unit_info.status=1")
     public List<UnitVO> selectUnitInfoByLikeName(@Param(value="name")String name);
 }
