@@ -47,7 +47,7 @@ public class UnitController extends BaseController {
     @GetMapping("/unit/{name}")
     @UriCounter
     public FeheadResponse unitLikeName(@PathVariable String name){
-
+        name = "%"+name+"%";
         return CommonReturnType.create(unitMapper.selectUnitInfoByLikeName(name));
     }
 
